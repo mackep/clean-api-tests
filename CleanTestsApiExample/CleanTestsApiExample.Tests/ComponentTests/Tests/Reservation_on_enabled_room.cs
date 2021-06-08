@@ -16,6 +16,7 @@ namespace CleanTestsApiExample.Tests.ComponentTests.Tests
 
             public Given_enabled_available_room(ProgramWithFakes setup) : base(setup)
             {
+                RoomRepository.EnableAllRooms();
                 ReservationRepository.ClearAllReservations();
             }
 

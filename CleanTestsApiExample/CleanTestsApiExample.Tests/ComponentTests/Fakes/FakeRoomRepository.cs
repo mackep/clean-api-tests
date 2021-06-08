@@ -13,6 +13,11 @@ namespace CleanTestsApiExample.Tests.ComponentTests.Fakes
             return Task.FromResult(RoomIsEnabled);
         }
 
+        public void EnableAllRooms()
+        {
+            RoomIsEnabled = true;
+        }
+
         public void DisableAllRooms()
         {
             RoomIsEnabled = false;

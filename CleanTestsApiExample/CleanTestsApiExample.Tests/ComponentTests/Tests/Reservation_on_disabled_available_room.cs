@@ -37,7 +37,6 @@ namespace CleanTestsApiExample.Tests.ComponentTests.Tests
             public void Transmitted_event_is_for_correct_room() =>
                 Assert.Equal(Frozen<RoomNumber>(), EventTransmitter.TransmittedEventOfType<ReservationAttemptOnDisabledRoom>().RoomNumber);
 
-
             [Fact]
             public void Status_code_423_is_returned() =>
                 Assert.Equal(HttpStatusCode.Locked, _statusCode);
